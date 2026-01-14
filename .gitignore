@@ -83,3 +83,5 @@ typings/
 build
 
 dist
+
+package-lock.json

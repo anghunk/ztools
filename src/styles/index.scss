@@ -1,0 +1,191 @@
+/* 公共样式 */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1 a {
+  padding-left: 5px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #518ecf;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+p {
+  margin: 1em 0;
+}
+
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inline {
+  display: inline-block;
+}
+
+/* 布局 */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #333;
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  color: #d2d2d2;
+  padding: 20px 10px 10px 10px;
+
+  a {
+    color: inherit;
+  }
+
+  .nav-groups {
+    padding-bottom: 60px;
+  }
+
+  .group-title {
+    font-size: 12px;
+    color: #888;
+    padding: 12px 4px 4px;
+    margin-top: 8px;
+    border-top: 1px solid #444;
+
+    &:first-child {
+      border-top: none;
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        padding: 6px 4px;
+        display: block;
+        transition: all 0.1s linear;
+
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &.active {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+main {
+  flex: 1;
+  margin-left: 300px;
+  padding: 30px 20px;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+
+  h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    line-height: 30px;
+
+    .h2tag {
+      margin-left: 20px;
+      background-color: #ecf5ff;
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 12px;
+      color: #409eff;
+      border: 1px solid #d9ecff;
+      border-radius: 4px;
+      box-sizing: border-box;
+      white-space: nowrap;
+    }
+
+    &+div {
+      position: relative;
+      height: calc(100% - 50px);
+      overflow: auto;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: calc(100% - 10px);
+  }
+}
