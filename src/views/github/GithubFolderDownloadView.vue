@@ -58,7 +58,6 @@
 </template>
 
 <script>
-import { ElMessage } from "element-plus";
 import JSZip from "jszip";
 
 export default {

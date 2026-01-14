@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import { ElMessage } from "element-plus";
-
 export default {
   name: "IpView",
   data() {

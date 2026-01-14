@@ -63,7 +63,6 @@
 </template>
 
 <script>
-import { ElMessage } from "element-plus";
 import opentype from "opentype.js";
 
 export default {
