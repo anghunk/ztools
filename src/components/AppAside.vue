@@ -1,6 +1,6 @@
 <template>
   <div class="aside">
-    <h1><router-link to="/">ztools</router-link></h1>
+    <h1><router-link to="/" class="logo">zTools 工具站</router-link></h1>
     <div class="nav-groups">
       <div class="nav-group" v-for="group in groups" :key="group.title">
         <div class="group-title">{{ group.title }}</div>
@@ -53,3 +53,9 @@ export default {
   },
 };
 </script>
+
+<style lang="less" scoped>
+.logo {
+  text-decoration: none;
+}
+</style>

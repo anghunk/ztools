@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>ztools</h2>
+    <h2>zTools 工具站</h2>
     <div>
       <p>一个纯前端工具库，无后台依赖。</p>
       <p>请从左侧导航选择工具使用。</p>
