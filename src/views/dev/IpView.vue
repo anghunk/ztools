@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>获取 ip 地址</h2>
+    <h2>获取 IP 地址</h2>
     <div>
       <p>
         您的当前ip地址为：

@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import AppAside from '@/components/AppAside.vue'
+import AppAside from "@/components/AppAside.vue";
 
 export default {
-  name: 'App',
-  components: { AppAside }
-}
+  name: "App",
+  components: { AppAside },
+};
 </script>
