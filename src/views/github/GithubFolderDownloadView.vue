@@ -88,9 +88,15 @@ export default {
   },
   methods: {
     getSource() {
-      let { href } = location;
-      if (href.indexOf("?source=") > -1) {
-        this.url = href.split("?source=")[1];
+      const search = location.search;
+      if (!search) {
+        return;
+      }
+      const params = new URLSearchParams(search);
+      const urlParam = params.get("url") || params.get("source");
+      if (urlParam) {
+        this.url = urlParam;
+        this.getFileList();
       }
     },
     onKeyup(event) {
@@ -290,6 +296,7 @@ export default {
         document.body.appendChild(a);
         a.click();
         a.remove();
+        this.downloading = false;
       });
     },
     alertError(tips) {
