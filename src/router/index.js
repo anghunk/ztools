@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory  } from 'vue-router';
 import githubRoutes from './modules/github';
 import fontRoutes from './modules/font';
 import devRoutes from './modules/dev';
@@ -11,6 +11,6 @@ const routes = [
 ];
 
 export default createRouter({
-	history: createWebHashHistory(),
+	history: createWebHistory (),
 	routes,
 });

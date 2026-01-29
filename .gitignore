@@ -85,3 +85,7 @@ build
 dist
 
 package-lock.json
+
+.claude
+.vscode
+.trae
